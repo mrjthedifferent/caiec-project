@@ -1,0 +1,50 @@
+name: Deploy FastAPI RAG API (Password + Port 2222)
+
+on:
+  push:
+    branches: [main]
+
+env:
+  SERVER: ${{ secrets.PROD_SERVER }}             # e.g. 123.45.67.89
+  USERNAME: ${{ secrets.PROD_USERNAME }}         # e.g. ubuntu
+  PASSWORD: ${{ secrets.PROD_PASSWORD }}         # SSH password
+  APP_PATH: ${{ secrets.PROD_APP_PATH }}         # e.g. /var/www/rag-api
+  SERVICE_NAME: ${{ secrets.PROD_SERVICE_NAME }} # e.g. rag-api.service
+  SSH_PORT: 2222
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install sshpass
+        run: sudo apt-get update && sudo apt-get install -y sshpass
+
+      - name: Upload Project Files
+        run: |
+          echo "📦 Uploading project to $SERVER:$APP_PATH ..."
+          sshpass -p "$PASSWORD" rsync -avz --delete \
+            -e "ssh -p $SSH_PORT -o StrictHostKeyChecking=no" \
+            ./ $USERNAME@$SERVER:$APP_PATH
+
+      - name: Install Dependencies and Restart RAG API
+        run: |
+          echo "🔧 Deploying and restarting the FastAPI RAG API..."
+          sshpass -p "$PASSWORD" ssh -p $SSH_PORT -o StrictHostKeyChecking=no $USERNAME@$SERVER << 'EOF'
+            set -e
+            cd $APP_PATH
+
+            echo "🧱 Setting up Python environment..."
+            python3 -m venv venv
+            source venv/bin/activate
+            pip install --upgrade pip
+            pip install -r requirements.txt
+
+            echo "🚀 Restarting the RAG API service..."
+            sudo systemctl daemon-reload
+            sudo systemctl restart $SERVICE_NAME
+            sudo systemctl status $SERVICE_NAME --no-pager
+          EOF
