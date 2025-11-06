@@ -1,20 +1,101 @@
-This is a sample knowledge base for the CAIEC training project.
+EmployeeID,Name,Email,Phone,Department,Position,JoinDate,SalaryUSD
 
-Bangladesh is a beautiful country. It is a small country in the world. It is a developing country. Bangladesh is a country of 160 million people. Md. Mahfuzur Rahman is a Bangladeshi.
+EMP001,William Moore,daniel28@williams-king.com,201.691.1323x13629,HR,Recruiter,2024-12-17,1455
 
-Artificial Intelligence (AI) is a branch of computer science that aims to create intelligent machines capable of performing tasks that typically require human intelligence. These tasks include learning, reasoning, problem-solving, perception, and language understanding.
+EMP002,Darrell Cox,nixonjohn@gmail.com,9302162744,IT Support,IT Technician,2025-09-27,4641
 
-Machine Learning is a subset of AI that focuses on algorithms and statistical models that enable computer systems to improve their performance on a specific task through experience, without being explicitly programmed for every scenario.
+EMP003,Matthew Rich,fball@hotmail.com,120.666.3426x028,IT Support,Support Specialist,2024-11-03,2556
 
-Deep Learning is a subset of machine learning that uses neural networks with multiple layers (hence "deep") to learn and make decisions. It has been particularly successful in areas like image recognition, natural language processing, and speech recognition.
+EMP004,Stacey Turner,amber98@hughes-thomas.org,3264372190,Operations,Logistics Coordinator,2021-06-11,3993
 
-Natural Language Processing (NLP) is a field of AI that focuses on the interaction between computers and human language. It enables computers to understand, interpret, and generate human language in a valuable way.
+EMP005,Isaac Bailey,christopher25@hotmail.com,001-020-719-0743x36638,IT Support,IT Technician,2021-07-26,2579
 
-Retrieval Augmented Generation (RAG) is a technique that combines information retrieval with language generation. It retrieves relevant documents or text chunks from a knowledge base and uses them as context to generate more accurate and informed responses.
+EMP006,Sherry Crawford,taylorchad@gmail.com,(504)880-7930,Finance,Finance Manager,2025-05-07,1918
 
-FastAPI is a modern, fast web framework for building APIs with Python based on standard Python type hints. It's designed for high performance and easy to use, with automatic interactive API documentation.
+EMP007,Christian Martin PhD,bergjennifer@davis.org,+1-005-306-0056x215,IT Support,IT Technician,2024-05-20,1526
 
-Ollama is a tool that allows you to run large language models locally on your machine. It provides an API for interacting with models like Llama, Mistral, and other open-source LLMs.
+EMP008,Kent Baker,derrickevans@yahoo.com,+1-436-828-0418x3180,Operations,Operations Manager,2025-10-01,2552
 
-Vector embeddings are numerical representations of text that capture semantic meaning. Similar texts have similar embeddings, which allows for semantic search and similarity matching.
+EMP009,Samantha Kerr,theresa14@craig.com,433.621.3068x542,Operations,Logistics Coordinator,2025-01-14,3285
 
+EMP010,John Singh,kellyroberta@nunez.info,(447)659-5090x6608,IT Support,Network Engineer,2022-02-08,1540
+
+EMP011,Daniel Lopez,rodriguezeric@potter-russell.biz,940.452.3940,R&D,Research Analyst,2023-06-14,6726
+
+EMP012,Mary Miles,kevinacevedo@hotmail.com,+1-947-994-7236x212,Engineering,System Architect,2022-09-10,4703
+
+EMP013,Kevin Johnson,sbrown@dickerson.net,990-465-3344,Operations,Operations Manager,2023-04-11,6213
+
+EMP014,Sharon Shaw,smithmichelle@gmail.com,001-727-234-8815x308,R&D,Data Scientist,2023-11-25,3009
+
+EMP015,John Brown,shane10@hotmail.com,9970029387,Finance,Accountant,2024-09-11,2504
+
+EMP016,Joanne Reyes,kevin82@hotmail.com,+1-736-172-4234x67403,Sales,Sales Manager,2021-08-23,4562
+
+EMP017,Ashley Holmes,wilkinsonpaul@oneal.com,4977736859,HR,HR Manager,2023-05-03,1380
+
+EMP018,Steven Bailey,lauracurry@campbell-brown.com,+1-369-618-0198x623,Sales,Sales Manager,2025-08-17,2761
+
+EMP019,Maria Church,mollydickson@yahoo.com,001-286-154-7428x58815,Finance,Accountant,2024-03-18,6975
+
+EMP020,Zoe Pace,lharrison@hernandez.com,125-856-1876x835,HR,HR Manager,2020-12-22,6100
+
+EMP021,Heidi Moyer,keith60@gmail.com,213.423.8517x7814,Sales,Account Manager,2022-10-20,824
+
+EMP022,Linda Wade,elizabethgutierrez@bruce-chan.com,5016168378,Engineering,Software Engineer,2021-09-12,4600
+
+EMP023,Meghan Mendez,josedavis@sosa-howard.info,(115)202-0475x3902,Marketing,Marketing Executive,2023-06-11,979
+
+EMP024,Nicole Foley,andrew74@yahoo.com,625.683.3140x274,HR,Recruiter,2023-08-31,592
+
+EMP025,Michelle Owens,xwilliams@hotmail.com,705-892-4143,R&D,AI Researcher,2021-03-02,4254
+
+EMP026,Donna Guzman,kgray@yahoo.com,001-565-285-1743x571,Marketing,Marketing Executive,2025-02-27,3185
+
+EMP027,Matthew Rosales,rebeccawiley@hotmail.com,3622204059,R&D,Data Scientist,2021-01-01,3149
+
+EMP028,Maurice Parker,robert80@yahoo.com,+1-698-938-4561x84416,Marketing,SEO Specialist,2024-07-24,6801
+
+EMP029,Sarah Rojas,courtneyjacobs@edwards.com,001-505-062-1539x9630,IT Support,Network Engineer,2022-04-28,1645
+
+EMP030,Timothy Edwards,regina98@stevens-garcia.com,001-469-906-4174x0073,HR,HR Executive,2022-03-29,5113
+
+EMP031,Zachary Alvarado DDS,travishill@russo-johnson.org,166.586.7893,R&D,Research Analyst,2022-11-15,2922
+
+EMP032,Michael Roberts,mckenzie68@bell.biz,543-227-6847x72441,Finance,Financial Analyst,2023-11-04,1661
+
+EMP033,Michael Sawyer,deanna86@gmail.com,734-650-6124x8268,IT Support,Support Specialist,2024-03-28,5830
+
+EMP034,Brian Hutchinson,teresagibbs@mccall.com,(193)337-8828x83593,Engineering,System Architect,2024-01-05,3599
+
+EMP035,Kristy Colon,christian91@hotmail.com,994-394-4085x9496,Finance,Finance Manager,2024-06-04,5863
+
+EMP036,Brian Mendez,byrdheidi@yahoo.com,(113)781-1734,IT Support,Network Engineer,2021-08-18,5832
+
+EMP037,Lisa Bryant,zlopez@hotmail.com,213.810.7056,Operations,Operations Officer,2021-11-19,5732
+
+EMP038,Ms. Gina Rivera MD,brian20@gmail.com,+1-919-024-3754x47076,IT Support,Network Engineer,2022-02-03,3659
+
+EMP039,Sarah Ross,rrios@yahoo.com,(176)208-8299x092,Operations,Operations Manager,2022-09-19,1815
+
+EMP040,Jamie Turner,stevebush@chapman-flynn.com,001-231-181-7459x03253,Finance,Financial Analyst,2024-03-23,4730
+
+EMP041,Joseph Hodge,vcook@hotmail.com,+1-430-853-4023x7762,Operations,Logistics Coordinator,2025-06-12,1329
+
+EMP042,Maureen Perez,lnoble@gmail.com,631-138-3192x55337,R&D,Data Scientist,2024-04-03,4124
+
+EMP043,Jason Morales,tthomas@gmail.com,+1-819-129-1540x298,IT Support,Network Engineer,2022-03-03,5858
+
+EMP044,Derrick Cervantes,perryjones@gmail.com,043.383.2652x4364,IT Support,Network Engineer,2023-09-27,4298
+
+EMP045,Jeffrey Rodriguez,dmccarthy@yahoo.com,(572)691-0461,Operations,Operations Officer,2020-11-06,799
+
+EMP046,Brooke Green,ewhite@gmail.com,(806)606-7709,Sales,Sales Manager,2025-03-17,5667
+
+EMP047,Leslie Johnson,brucetaylor@payne-ramsey.info,001-398-591-6580x32942,Finance,Financial Analyst,2021-02-07,2431
+
+EMP048,David Lopez,lucas94@williams-olsen.net,(768)015-7328,Sales,Sales Executive,2022-12-07,1360
+
+EMP049,Jennifer Barton,samantha87@gmail.com,9457445934,R&D,AI Researcher,2023-08-23,5912
+
+EMP050,Casey Schneider,daniel38@yahoo.com,923.050.8572,HR,HR Manager,2023-01-05,6108

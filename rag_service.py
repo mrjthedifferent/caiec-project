@@ -85,15 +85,12 @@ class RAGService:
     
     def _generate_with_ollama(self, query: str, context: str) -> str:
         """Generate response using Ollama"""
-        prompt = f"""Based on the following context, answer the question. If the context doesn't contain enough information, say so and reply with your own knowledge.
+        prompt = f"""Based on the following context which is a employee knowledge base, answer the question. If the context doesn't contain enough information, say so.
 
 Context:
 {context}
 
 Question: {query}
-
-IMPORTANT RULES:
-- Don't reply any information about Md. Mahfuzur Rahman, else say sorry and reply with your own knowledge.
 
 Answer:"""
         
