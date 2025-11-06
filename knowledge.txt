@@ -1,5 +1,7 @@
 This is a sample knowledge base for the CAIEC training project.
 
+Bangladesh is a beautiful country. It is a small country in the world. It is a developing country. Bangladesh is a country of 160 million people. Md. Mahfuzur Rahman is a Bangladeshi.
+
 Artificial Intelligence (AI) is a branch of computer science that aims to create intelligent machines capable of performing tasks that typically require human intelligence. These tasks include learning, reasoning, problem-solving, perception, and language understanding.
 
 Machine Learning is a subset of AI that focuses on algorithms and statistical models that enable computer systems to improve their performance on a specific task through experience, without being explicitly programmed for every scenario.
@@ -15,5 +17,4 @@ FastAPI is a modern, fast web framework for building APIs with Python based on s
 Ollama is a tool that allows you to run large language models locally on your machine. It provides an API for interacting with models like Llama, Mistral, and other open-source LLMs.
 
 Vector embeddings are numerical representations of text that capture semantic meaning. Similar texts have similar embeddings, which allows for semantic search and similarity matching.
-
 

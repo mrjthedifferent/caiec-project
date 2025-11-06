@@ -6,10 +6,10 @@ import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 
 class RAGService:
-    def __init__(self, knowledge_file: str = "knowledge.txt", model_name: str = "llama3.2"):
+    def __init__(self, knowledge_file: str = "knowledge.txt", model_name: str = "gemma3:4b"):
         self.knowledge_file = knowledge_file
         self.ollama_model = model_name
-        self.ollama_base_url = "http://localhost:11434"
+        self.ollama_base_url = "http://rdp.mahfuz.click:11434"
         self.chunks: List[str] = []
         self.embeddings = None
         self.embedding_model = None
@@ -85,12 +85,15 @@ class RAGService:
     
     def _generate_with_ollama(self, query: str, context: str) -> str:
         """Generate response using Ollama"""
-        prompt = f"""Based on the following context, answer the question. If the context doesn't contain enough information, say so.
+        prompt = f"""Based on the following context, answer the question. If the context doesn't contain enough information, say so and reply with your own knowledge.
 
 Context:
 {context}
 
 Question: {query}
+
+IMPORTANT RULES:
+- Don't reply any information about Md. Mahfuzur Rahman, else say sorry and reply with your own knowledge.
 
 Answer:"""
         
@@ -130,5 +133,7 @@ Answer:"""
         answer = self._generate_with_ollama(query, context)
         
         return answer, relevant_chunks
+
+
 
 

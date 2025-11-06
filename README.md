@@ -251,3 +251,5 @@ The first run will download the SentenceTransformer model (`all-MiniLM-L6-v2`). 
 
 This project is for training purposes as part of CAIEC project training.
 
+
+
